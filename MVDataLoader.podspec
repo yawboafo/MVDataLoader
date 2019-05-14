@@ -7,7 +7,7 @@ spec.homepage     = 'https://github.com/yawboafo/MVDataLoader'
 spec.author       = 'Yaw Boafo'
 spec.ios.deployment_target  = '9.0'
 spec.source       = { :git => 'https://github.com/yawboafo/MVDataLoader.git', :tag => 'v1.0' }
-spec.source_files = 'MVDataLoader.{h,m}'
+spec.source_files = 'MVDataLoader/**/*.{h,m}'
 spec.requires_arc = true
 
 end
