@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MVDataLoader"
-  s.version      = "v1.0"
-s.summary      = "A simple Network Layer for requesting multiple distinct resources in parallel;"
+  s.version      = "1.0"
+  s.summary      = "A simple Network Layer for requesting multiple distinct resources in parallel"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,16 @@ s.summary      = "A simple Network Layer for requesting multiple distinct resour
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+
+                       For MindValley IOS Mobile Test Challange,
+                       This library will help you load HTTP request in parallel,
+                        Using NSoperations you can control your multiple requests,
+                        It also gives your the ability to manage your Network request data caching policies
+
+
                    DESC
 
-  s.homepage     = "http://EXAMPLE/MVDataLoader"
+  s.homepage     = "https://github.com/yawboafo/MVDataLoader"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +45,7 @@ s.summary      = "A simple Network Layer for requesting multiple distinct resour
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "All rights reserved"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,18 +86,12 @@ s.summary      = "A simple Network Layer for requesting multiple distinct resour
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yawboafo/MVDataLoader.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/yawboafo/MVDataLoader.git", :tag => "v1.0" }
 
 
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+
+  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
