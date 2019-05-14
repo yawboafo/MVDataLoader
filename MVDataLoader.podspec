@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MVDataLoader"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of MVDataLoader."
+  s.version      = "v1.0"
+s.summary      = "A simple Network Layer for requesting multiple distinct resources in parallel;"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yawboafo/MVDataLoader.git", :tag => "#{v1.0}" }
+  s.source       = { :git => "https://github.com/yawboafo/MVDataLoader.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
