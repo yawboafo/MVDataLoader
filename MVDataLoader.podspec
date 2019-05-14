@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   s.author             = { "Yawboafo" => "yawboafo77@gmail.com" }
   # Or just: s.author    = "Yawboafo"
   # s.authors            = { "Yawboafo" => "yawboafo77@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Yawboafo"
+  # s.social_media_url   = "https://www.facebook.com/koranteng.nanayaw.5?ref=bookmarks"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/MVDataLoader.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/yawboafo/MVDataLoader.git", :tag => "#{v1.0}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
