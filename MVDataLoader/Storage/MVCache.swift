@@ -25,7 +25,7 @@ class MVCache {
     init() {
         
      
-        URLCache.shared  = sharedCache
+           URLCache.shared  = sharedCache
            didreceiveMemoryWarning()
     }
     
@@ -39,8 +39,8 @@ class MVCache {
             diskCapacity: 0,
             diskPath: nil
         )
-        
         URLCache.shared  = sharedCache
+       
         didreceiveMemoryWarning()
         
     }
