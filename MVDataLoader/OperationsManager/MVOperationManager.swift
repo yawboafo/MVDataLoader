@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MVOperationManager {
+public class MVOperationManager {
     
     
     private let queueManager: MVOperationQueue
@@ -21,7 +21,7 @@ class MVOperationManager {
     }
     
     
-    func loadData(url: String, completionHandler: @escaping (_ result: MVDataResponse) ->Void) {
+  public  func loadData(url: String, completionHandler: @escaping (_ result: MVDataResponse) ->Void) {
         
         let operation = MVLoadAnyDataOperation(url: url)
         operation.qualityOfService = .background
@@ -35,7 +35,7 @@ class MVOperationManager {
    
     
     
-    func cancelOperation(url: String) {
+   public func cancelOperation(url: String) {
         for ops in queueManager.queue.operations {
             
             if ops.name == url {

@@ -10,7 +10,7 @@ import Foundation
 
 import Foundation
 
-class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
+  class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
     
     private let session: URLSession
     private var urlString: String = ""

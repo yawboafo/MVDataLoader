@@ -13,11 +13,11 @@ import UIKit
 
 
 
-class MVCache {
+public class MVCache {
     
     private var observer: NSObjectProtocol!
     let defaultMaxMemoryLimit = 30
-    static var shared = MVCache()
+    public static var shared = MVCache()
     
     var sharedCache = URLCache()
     
@@ -33,7 +33,7 @@ class MVCache {
     
     
     
-    func configureMaxmemoryLimit(maxMemoryLimit: Int){
+   public func configureMaxmemoryLimit(maxMemoryLimit: Int){
           sharedCache =  URLCache(
             memoryCapacity: maxMemoryLimit * (1024*1024),
             diskCapacity: 0,

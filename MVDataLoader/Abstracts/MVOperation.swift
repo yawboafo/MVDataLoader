@@ -9,7 +9,7 @@ import Foundation
 
 
 
-class MVOperation<T>: Operation {
+ class MVOperation<T>: Operation {
     
     
     
