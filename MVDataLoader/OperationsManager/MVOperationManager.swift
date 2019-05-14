@@ -17,18 +17,22 @@ class MVOperationManager {
     
     init(withQueueManager queueManager: MVOperationQueue = MVOperationQueue.shared) {
         self.queueManager = queueManager
+       
     }
     
     
     func loadData(url: String, completionHandler: @escaping (_ result: MVDataResponse) ->Void) {
         
-        let operation = MVLoadAnyDataOperation(cacheMaxCapacity: 900, url: url)
+        let operation = MVLoadAnyDataOperation(url: url)
         operation.qualityOfService = .background
         operation.completionHandler = completionHandler
         operation.name = url
         queueManager.enqueue(operation)
         
     }
+    
+    
+   
     
     
     func cancelOperation(url: String) {

@@ -29,21 +29,21 @@ class MVCache {
            didreceiveMemoryWarning()
     }
     
+
     
-    //Configurable max capacity
-    init(maxMemoryLimit: Int) {
-       
-        sharedCache =  URLCache(
+    
+    
+    func configureMaxmemoryLimit(maxMemoryLimit: Int){
+          sharedCache =  URLCache(
             memoryCapacity: maxMemoryLimit * (1024*1024),
             diskCapacity: 0,
             diskPath: nil
         )
         
-          URLCache.shared  = sharedCache
-           didreceiveMemoryWarning()
+        URLCache.shared  = sharedCache
+        didreceiveMemoryWarning()
+        
     }
-    
-    
     
     //Observe memory warnings
     private func didreceiveMemoryWarning(){

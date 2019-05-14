@@ -15,7 +15,7 @@ class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
     private let session: URLSession
     private var urlString: String = ""
     private var task: URLSessionTask?
-    var  cache =   MVCache()
+    var  cache =   MVCache().sharedCache
     
     
     
@@ -27,13 +27,7 @@ class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
         
     }
     
-     // Overload Constructor  with memoryMax limit included
-    init(cacheMaxCapacity: Int, url: String,session: URLSession = URLSession.shared) {
-        self.cache =  MVCache(maxMemoryLimit: cacheMaxCapacity)
-        self.session = session
-        self.urlString = url
-    }
-    
+  
     
     
 
@@ -53,7 +47,7 @@ class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
         
         
         //Fetch data if avaiable in Cache
-        if let cachedData = cache.sharedCache.cachedResponse(for: urlRequest) {
+        if let cachedData = cache.cachedResponse(for: urlRequest) {
             
             // Prepare Data to prevent throwing nil
             var _data = Data()
@@ -82,7 +76,7 @@ class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
                 
                
                 //Cache data
-                self.cache.sharedCache.storeCachedResponse(
+                self.cache.storeCachedResponse(
                     CachedURLResponse(
                         response: response ?? URLResponse(),
                         data: data.data),
