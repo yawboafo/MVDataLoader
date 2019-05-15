@@ -11,7 +11,7 @@ import Foundation
 
 import Foundation
 
- class MVOperationQueue {
+ internal class MVOperationQueue {
     
     
     

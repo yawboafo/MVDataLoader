@@ -13,7 +13,7 @@ import UIKit
 
 
 
-public class MVCache {
+internal class MVCache {
     
     private var observer: NSObjectProtocol!
     let defaultMaxMemoryLimit = 30

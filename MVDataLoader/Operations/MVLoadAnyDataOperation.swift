@@ -8,9 +8,9 @@
 
 import Foundation
 
-import Foundation
 
-  class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
+
+ internal class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
     
     private let session: URLSession
     private var urlString: String = ""
