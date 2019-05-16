@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		482AF766228B8320003CBE81 /* MVRegularOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AF765228B8320003CBE81 /* MVRegularOperation.swift */; };
-		482AF768228B8377003CBE81 /* MVCreateImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */; };
 		484BAF81228A9CE500BDC39A /* MVDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484BAF77228A9CE500BDC39A /* MVDataLoader.framework */; };
 		484BAF86228A9CE500BDC39A /* MVDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */; };
-		484BAF88228A9CE500BDC39A /* MVDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 484BAF7A228A9CE500BDC39A /* MVDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		484BAF93228A9D5500BDC39A /* MVOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF92228A9D5500BDC39A /* MVOperation.swift */; };
-		484BAF96228A9DB900BDC39A /* MVDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF95228A9DB900BDC39A /* MVDataResponse.swift */; };
-		484BAF9A228A9E4500BDC39A /* MVLoadAnyDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */; };
-		484BAF9D228A9E7C00BDC39A /* MVUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */; };
-		484BAF9F228AA07B00BDC39A /* MVOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF9E228AA07B00BDC39A /* MVOperationQueue.swift */; };
-		484BAFA2228AA14C00BDC39A /* MVOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAFA1228AA14C00BDC39A /* MVOperationManager.swift */; };
-		48DC8FEC228CB5B9000F8994 /* MVNsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */; };
+		48B6264F228DE3A400B98C11 /* MVHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62640228DE3A400B98C11 /* MVHttpRequest.swift */; };
+		48B62650228DE3A400B98C11 /* MVDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62641228DE3A400B98C11 /* MVDataResponse.swift */; };
+		48B62651228DE3A400B98C11 /* MVDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B62642228DE3A400B98C11 /* MVDataLoader.h */; };
+		48B62652228DE3A400B98C11 /* MVLoadAnyDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */; };
+		48B62653228DE3A400B98C11 /* MVCreateImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */; };
+		48B62654228DE3A400B98C11 /* MVRegularOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62645228DE3A400B98C11 /* MVRegularOperation.swift */; };
+		48B62655228DE3A400B98C11 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62646228DE3A400B98C11 /* HttpRequest.swift */; };
+		48B62656228DE3A400B98C11 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62647228DE3A400B98C11 /* MockURLSession.swift */; };
+		48B62657228DE3A400B98C11 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */; };
+		48B62658228DE3A400B98C11 /* MVUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62649228DE3A400B98C11 /* MVUrlCache.swift */; };
+		48B62659228DE3A400B98C11 /* MVOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264A228DE3A400B98C11 /* MVOperation.swift */; };
+		48B6265A228DE3A400B98C11 /* MVOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */; };
+		48B6265B228DE3A400B98C11 /* MVNsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264C228DE3A400B98C11 /* MVNsCache.swift */; };
+		48B6265C228DE3A400B98C11 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B6264D228DE3A400B98C11 /* Info.plist */; };
+		48B6265D228DE3A400B98C11 /* MVOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264E228DE3A400B98C11 /* MVOperationManager.swift */; };
 		48DC8FF1228CCD6D000F8994 /* MVHttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */; };
-		48DC8FF3228CD3A6000F8994 /* MVHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */; };
 		48DC8FF5228CD426000F8994 /* MVUrlCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */; };
 		48DC8FF7228CD560000F8994 /* MVOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF6228CD560000F8994 /* MVOperationsTests.swift */; };
-		48DC8FF9228CE271000F8994 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF8228CE271000F8994 /* MockURLSession.swift */; };
-		48DC8FFB228CE28C000F8994 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,27 +40,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		482AF765228B8320003CBE81 /* MVRegularOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVRegularOperation.swift; sourceTree = "<group>"; };
-		482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCreateImageOperation.swift; sourceTree = "<group>"; };
 		484BAF77228A9CE500BDC39A /* MVDataLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVDataLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		484BAF7A228A9CE500BDC39A /* MVDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDataLoader.h; sourceTree = "<group>"; };
-		484BAF7B228A9CE500BDC39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484BAF80228A9CE500BDC39A /* MVDataLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVDataLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDataLoaderTests.swift; sourceTree = "<group>"; };
 		484BAF87228A9CE500BDC39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		484BAF92228A9D5500BDC39A /* MVOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperation.swift; sourceTree = "<group>"; };
-		484BAF95228A9DB900BDC39A /* MVDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDataResponse.swift; sourceTree = "<group>"; };
-		484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoadAnyDataOperation.swift; sourceTree = "<group>"; };
-		484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUrlCache.swift; sourceTree = "<group>"; };
-		484BAF9E228AA07B00BDC39A /* MVOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationQueue.swift; sourceTree = "<group>"; };
-		484BAFA1228AA14C00BDC39A /* MVOperationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationManager.swift; sourceTree = "<group>"; };
-		48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVNsCache.swift; sourceTree = "<group>"; };
+		48B62640228DE3A400B98C11 /* MVHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVHttpRequest.swift; sourceTree = "<group>"; };
+		48B62641228DE3A400B98C11 /* MVDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVDataResponse.swift; sourceTree = "<group>"; };
+		48B62642228DE3A400B98C11 /* MVDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVDataLoader.h; sourceTree = "<group>"; };
+		48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLoadAnyDataOperation.swift; sourceTree = "<group>"; };
+		48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCreateImageOperation.swift; sourceTree = "<group>"; };
+		48B62645228DE3A400B98C11 /* MVRegularOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVRegularOperation.swift; sourceTree = "<group>"; };
+		48B62646228DE3A400B98C11 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		48B62647228DE3A400B98C11 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		48B62649228DE3A400B98C11 /* MVUrlCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVUrlCache.swift; sourceTree = "<group>"; };
+		48B6264A228DE3A400B98C11 /* MVOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVOperation.swift; sourceTree = "<group>"; };
+		48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVOperationQueue.swift; sourceTree = "<group>"; };
+		48B6264C228DE3A400B98C11 /* MVNsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVNsCache.swift; sourceTree = "<group>"; };
+		48B6264D228DE3A400B98C11 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B6264E228DE3A400B98C11 /* MVOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVOperationManager.swift; sourceTree = "<group>"; };
 		48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHttpRequestTests.swift; sourceTree = "<group>"; };
-		48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHttpRequest.swift; sourceTree = "<group>"; };
 		48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUrlCacheTests.swift; sourceTree = "<group>"; };
 		48DC8FF6228CD560000F8994 /* MVOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationsTests.swift; sourceTree = "<group>"; };
-		48DC8FF8228CE271000F8994 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
-		48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +104,7 @@
 		484BAF79228A9CE500BDC39A /* MVDataLoader */ = {
 			isa = PBXGroup;
 			children = (
-				48DC8FED228CCB7C000F8994 /* NetworkLayer */,
-				484BAFA0228AA0EC00BDC39A /* Operations */,
-				484BAF98228A9E0D00BDC39A /* Storage */,
-				484BAF97228A9DF400BDC39A /* OperationsManager */,
-				484BAF94228A9DA400BDC39A /* DataModel */,
-				484BAF91228A9D2F00BDC39A /* Abstracts */,
-				484BAF7A228A9CE500BDC39A /* MVDataLoader.h */,
-				484BAF7B228A9CE500BDC39A /* Info.plist */,
+				48B6263F228DE3A400B98C11 /* Sources */,
 			);
 			path = MVDataLoader;
 			sourceTree = "<group>";
@@ -125,58 +121,26 @@
 			path = MVDataLoaderTests;
 			sourceTree = "<group>";
 		};
-		484BAF91228A9D2F00BDC39A /* Abstracts */ = {
+		48B6263F228DE3A400B98C11 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				484BAF92228A9D5500BDC39A /* MVOperation.swift */,
-				482AF765228B8320003CBE81 /* MVRegularOperation.swift */,
+				48B62640228DE3A400B98C11 /* MVHttpRequest.swift */,
+				48B62641228DE3A400B98C11 /* MVDataResponse.swift */,
+				48B62642228DE3A400B98C11 /* MVDataLoader.h */,
+				48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */,
+				48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */,
+				48B62645228DE3A400B98C11 /* MVRegularOperation.swift */,
+				48B62646228DE3A400B98C11 /* HttpRequest.swift */,
+				48B62647228DE3A400B98C11 /* MockURLSession.swift */,
+				48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */,
+				48B62649228DE3A400B98C11 /* MVUrlCache.swift */,
+				48B6264A228DE3A400B98C11 /* MVOperation.swift */,
+				48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */,
+				48B6264C228DE3A400B98C11 /* MVNsCache.swift */,
+				48B6264D228DE3A400B98C11 /* Info.plist */,
+				48B6264E228DE3A400B98C11 /* MVOperationManager.swift */,
 			);
-			path = Abstracts;
-			sourceTree = "<group>";
-		};
-		484BAF94228A9DA400BDC39A /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				484BAF95228A9DB900BDC39A /* MVDataResponse.swift */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		484BAF97228A9DF400BDC39A /* OperationsManager */ = {
-			isa = PBXGroup;
-			children = (
-				484BAF9E228AA07B00BDC39A /* MVOperationQueue.swift */,
-				484BAFA1228AA14C00BDC39A /* MVOperationManager.swift */,
-			);
-			path = OperationsManager;
-			sourceTree = "<group>";
-		};
-		484BAF98228A9E0D00BDC39A /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */,
-				48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		484BAFA0228AA0EC00BDC39A /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */,
-				482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		48DC8FED228CCB7C000F8994 /* NetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */,
-				48DC8FF8228CE271000F8994 /* MockURLSession.swift */,
-				48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */,
-			);
-			path = NetworkLayer;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484BAF88228A9CE500BDC39A /* MVDataLoader.h in Headers */,
+				48B62651228DE3A400B98C11 /* MVDataLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B6265C228DE3A400B98C11 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,18 +253,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484BAFA2228AA14C00BDC39A /* MVOperationManager.swift in Sources */,
-				484BAF93228A9D5500BDC39A /* MVOperation.swift in Sources */,
-				482AF768228B8377003CBE81 /* MVCreateImageOperation.swift in Sources */,
-				48DC8FF9228CE271000F8994 /* MockURLSession.swift in Sources */,
-				484BAF96228A9DB900BDC39A /* MVDataResponse.swift in Sources */,
-				48DC8FF3228CD3A6000F8994 /* MVHttpRequest.swift in Sources */,
-				484BAF9A228A9E4500BDC39A /* MVLoadAnyDataOperation.swift in Sources */,
-				482AF766228B8320003CBE81 /* MVRegularOperation.swift in Sources */,
-				48DC8FEC228CB5B9000F8994 /* MVNsCache.swift in Sources */,
-				48DC8FFB228CE28C000F8994 /* MockURLSessionDataTask.swift in Sources */,
-				484BAF9D228A9E7C00BDC39A /* MVUrlCache.swift in Sources */,
-				484BAF9F228AA07B00BDC39A /* MVOperationQueue.swift in Sources */,
+				48B6265D228DE3A400B98C11 /* MVOperationManager.swift in Sources */,
+				48B62659228DE3A400B98C11 /* MVOperation.swift in Sources */,
+				48B6264F228DE3A400B98C11 /* MVHttpRequest.swift in Sources */,
+				48B62658228DE3A400B98C11 /* MVUrlCache.swift in Sources */,
+				48B62654228DE3A400B98C11 /* MVRegularOperation.swift in Sources */,
+				48B62650228DE3A400B98C11 /* MVDataResponse.swift in Sources */,
+				48B62653228DE3A400B98C11 /* MVCreateImageOperation.swift in Sources */,
+				48B6265B228DE3A400B98C11 /* MVNsCache.swift in Sources */,
+				48B62656228DE3A400B98C11 /* MockURLSession.swift in Sources */,
+				48B6265A228DE3A400B98C11 /* MVOperationQueue.swift in Sources */,
+				48B62657228DE3A400B98C11 /* MockURLSessionDataTask.swift in Sources */,
+				48B62652228DE3A400B98C11 /* MVLoadAnyDataOperation.swift in Sources */,
+				48B62655228DE3A400B98C11 /* HttpRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
