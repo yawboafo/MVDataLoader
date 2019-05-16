@@ -11,18 +11,16 @@
 		484BAF86228A9CE500BDC39A /* MVDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */; };
 		48B6264F228DE3A400B98C11 /* MVHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62640228DE3A400B98C11 /* MVHttpRequest.swift */; };
 		48B62650228DE3A400B98C11 /* MVDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62641228DE3A400B98C11 /* MVDataResponse.swift */; };
-		48B62651228DE3A400B98C11 /* MVDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B62642228DE3A400B98C11 /* MVDataLoader.h */; };
+		48B62651228DE3A400B98C11 /* MVDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B62642228DE3A400B98C11 /* MVDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48B62652228DE3A400B98C11 /* MVLoadAnyDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */; };
 		48B62653228DE3A400B98C11 /* MVCreateImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */; };
 		48B62654228DE3A400B98C11 /* MVRegularOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62645228DE3A400B98C11 /* MVRegularOperation.swift */; };
-		48B62655228DE3A400B98C11 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62646228DE3A400B98C11 /* HttpRequest.swift */; };
 		48B62656228DE3A400B98C11 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62647228DE3A400B98C11 /* MockURLSession.swift */; };
 		48B62657228DE3A400B98C11 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */; };
 		48B62658228DE3A400B98C11 /* MVUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62649228DE3A400B98C11 /* MVUrlCache.swift */; };
 		48B62659228DE3A400B98C11 /* MVOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264A228DE3A400B98C11 /* MVOperation.swift */; };
 		48B6265A228DE3A400B98C11 /* MVOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */; };
 		48B6265B228DE3A400B98C11 /* MVNsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264C228DE3A400B98C11 /* MVNsCache.swift */; };
-		48B6265C228DE3A400B98C11 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48B6264D228DE3A400B98C11 /* Info.plist */; };
 		48B6265D228DE3A400B98C11 /* MVOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B6264E228DE3A400B98C11 /* MVOperationManager.swift */; };
 		48DC8FF1228CCD6D000F8994 /* MVHttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */; };
 		48DC8FF5228CD426000F8994 /* MVUrlCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */; };
@@ -50,7 +48,6 @@
 		48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLoadAnyDataOperation.swift; sourceTree = "<group>"; };
 		48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCreateImageOperation.swift; sourceTree = "<group>"; };
 		48B62645228DE3A400B98C11 /* MVRegularOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVRegularOperation.swift; sourceTree = "<group>"; };
-		48B62646228DE3A400B98C11 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		48B62647228DE3A400B98C11 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		48B62649228DE3A400B98C11 /* MVUrlCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVUrlCache.swift; sourceTree = "<group>"; };
@@ -104,6 +101,8 @@
 		484BAF79228A9CE500BDC39A /* MVDataLoader */ = {
 			isa = PBXGroup;
 			children = (
+				48B62642228DE3A400B98C11 /* MVDataLoader.h */,
+				48B6264D228DE3A400B98C11 /* Info.plist */,
 				48B6263F228DE3A400B98C11 /* Sources */,
 			);
 			path = MVDataLoader;
@@ -126,18 +125,15 @@
 			children = (
 				48B62640228DE3A400B98C11 /* MVHttpRequest.swift */,
 				48B62641228DE3A400B98C11 /* MVDataResponse.swift */,
-				48B62642228DE3A400B98C11 /* MVDataLoader.h */,
 				48B62643228DE3A400B98C11 /* MVLoadAnyDataOperation.swift */,
 				48B62644228DE3A400B98C11 /* MVCreateImageOperation.swift */,
 				48B62645228DE3A400B98C11 /* MVRegularOperation.swift */,
-				48B62646228DE3A400B98C11 /* HttpRequest.swift */,
 				48B62647228DE3A400B98C11 /* MockURLSession.swift */,
 				48B62648228DE3A400B98C11 /* MockURLSessionDataTask.swift */,
 				48B62649228DE3A400B98C11 /* MVUrlCache.swift */,
 				48B6264A228DE3A400B98C11 /* MVOperation.swift */,
 				48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */,
 				48B6264C228DE3A400B98C11 /* MVNsCache.swift */,
-				48B6264D228DE3A400B98C11 /* Info.plist */,
 				48B6264E228DE3A400B98C11 /* MVOperationManager.swift */,
 			);
 			path = Sources;
@@ -235,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B6265C228DE3A400B98C11 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +260,6 @@
 				48B6265A228DE3A400B98C11 /* MVOperationQueue.swift in Sources */,
 				48B62657228DE3A400B98C11 /* MockURLSessionDataTask.swift in Sources */,
 				48B62652228DE3A400B98C11 /* MVLoadAnyDataOperation.swift in Sources */,
-				48B62655228DE3A400B98C11 /* HttpRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
