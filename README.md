@@ -84,11 +84,11 @@ let placeHolder = UIImageView(named: "default")
 
 ```swift
 
-private let dataLoader = MVOperationManager(
-)
+private let dataLoader = MVOperationManager()
+
  dataLoader.loadData(url: stringURL) { (data) in
            //Data is here 
-           //Do error checks and get final data from 
+           //Do error checks and get final data from `MVDataResponse()`
           print(data.data)
         
          
