@@ -14,6 +14,7 @@ import UIKit
 
 
 public class MVUrlCache {
+
     
     private var observer: NSObjectProtocol!
     let defaultMaxMemoryLimit = 30

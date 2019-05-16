@@ -10,7 +10,7 @@ import Foundation
 
 
 
-  class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
+ internal class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
     
     //let session = URLSession()
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class MVOperationManager {
+open class MVOperationManager {
     
     
     public let queueManager: MVOperationQueue
