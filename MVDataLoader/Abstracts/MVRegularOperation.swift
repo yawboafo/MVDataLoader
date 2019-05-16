@@ -1,21 +1,20 @@
-
-
-
-
-
-
+//
+//  MVRegularOperation.swift
+//  MVDataLoader
+//
+//  Created by Engineer 144 on 14/05/2019.
+//  Copyright © 2019 Engineer 144. All rights reserved.
+//
 
 import Foundation
-
-
-
-  class MVOperation<T>: Operation {
+import UIKit
+class MVRegularOperation<T>: Operation {
     
     
     
     // All purpose completion Handler
     
-    typealias OperationCompletionHandler = (_ result: MVDataResponse) -> Void
+    typealias OperationCompletionHandler = (_ result: UIImage) -> Void
     var completionHandler: (OperationCompletionHandler)?
     
     
@@ -76,7 +75,7 @@ import Foundation
         }
     }
     
-    func complete(result: MVDataResponse) {
+    func complete(result: UIImage) {
         finish()
         
         if !isCancelled {

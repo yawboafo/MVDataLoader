@@ -13,16 +13,16 @@ import UIKit
 
 
 
-public class MVCache {
+public class MVUrlCache {
     
     private var observer: NSObjectProtocol!
     let defaultMaxMemoryLimit = 30
-    public static var shared = MVCache()
+    public static var shared = MVUrlCache()
     
     var sharedCache = URLCache()
     
     
-    init() {
+   public init() {
         
      
            URLCache.shared  = sharedCache
@@ -32,6 +32,14 @@ public class MVCache {
 
     
     
+    public func invalidateCache(){
+    
+    
+        URLCache.shared.removeAllCachedResponses()
+        
+    
+    }
+    
     
    public func configureMaxmemoryLimit(maxMemoryLimit: Int){
           sharedCache =  URLCache(
@@ -40,7 +48,6 @@ public class MVCache {
             diskPath: nil
         )
         URLCache.shared  = sharedCache
-       
         didreceiveMemoryWarning()
         
     }
@@ -58,7 +65,7 @@ public class MVCache {
     
     
     
-    //Releaser observers is destroyed
+    //Release observers if class destroyed
     deinit {
         NotificationCenter.default.removeObserver(observer)
     }

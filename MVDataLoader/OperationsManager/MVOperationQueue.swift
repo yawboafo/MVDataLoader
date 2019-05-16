@@ -11,7 +11,7 @@ import Foundation
 
 import Foundation
 
- class MVOperationQueue {
+ public class MVOperationQueue {
     
     
     
@@ -22,7 +22,7 @@ import Foundation
     lazy var queue: OperationQueue = {
         let queue = OperationQueue()
         queue.name = "MVOperationManager"
-        queue.maxConcurrentOperationCount = 1
+        queue.maxConcurrentOperationCount = OperationQueue.defaultMaxConcurrentOperationCount
         return queue;
     }()
     

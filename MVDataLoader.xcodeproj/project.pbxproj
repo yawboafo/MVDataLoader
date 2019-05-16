@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482AF766228B8320003CBE81 /* MVRegularOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AF765228B8320003CBE81 /* MVRegularOperation.swift */; };
+		482AF768228B8377003CBE81 /* MVCreateImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */; };
 		484BAF81228A9CE500BDC39A /* MVDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484BAF77228A9CE500BDC39A /* MVDataLoader.framework */; };
 		484BAF86228A9CE500BDC39A /* MVDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */; };
 		484BAF88228A9CE500BDC39A /* MVDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 484BAF7A228A9CE500BDC39A /* MVDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		484BAF93228A9D5500BDC39A /* MVOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF92228A9D5500BDC39A /* MVOperation.swift */; };
 		484BAF96228A9DB900BDC39A /* MVDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF95228A9DB900BDC39A /* MVDataResponse.swift */; };
 		484BAF9A228A9E4500BDC39A /* MVLoadAnyDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */; };
-		484BAF9D228A9E7C00BDC39A /* MVCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF9C228A9E7C00BDC39A /* MVCache.swift */; };
+		484BAF9D228A9E7C00BDC39A /* MVUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */; };
 		484BAF9F228AA07B00BDC39A /* MVOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF9E228AA07B00BDC39A /* MVOperationQueue.swift */; };
 		484BAFA2228AA14C00BDC39A /* MVOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAFA1228AA14C00BDC39A /* MVOperationManager.swift */; };
+		48DC8FEC228CB5B9000F8994 /* MVNsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */; };
+		48DC8FF1228CCD6D000F8994 /* MVHttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */; };
+		48DC8FF3228CD3A6000F8994 /* MVHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */; };
+		48DC8FF5228CD426000F8994 /* MVUrlCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */; };
+		48DC8FF7228CD560000F8994 /* MVOperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF6228CD560000F8994 /* MVOperationsTests.swift */; };
+		48DC8FF9228CE271000F8994 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FF8228CE271000F8994 /* MockURLSession.swift */; };
+		48DC8FFB228CE28C000F8994 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482AF765228B8320003CBE81 /* MVRegularOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVRegularOperation.swift; sourceTree = "<group>"; };
+		482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCreateImageOperation.swift; sourceTree = "<group>"; };
 		484BAF77228A9CE500BDC39A /* MVDataLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVDataLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		484BAF7A228A9CE500BDC39A /* MVDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDataLoader.h; sourceTree = "<group>"; };
 		484BAF7B228A9CE500BDC39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,9 +49,16 @@
 		484BAF92228A9D5500BDC39A /* MVOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperation.swift; sourceTree = "<group>"; };
 		484BAF95228A9DB900BDC39A /* MVDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDataResponse.swift; sourceTree = "<group>"; };
 		484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoadAnyDataOperation.swift; sourceTree = "<group>"; };
-		484BAF9C228A9E7C00BDC39A /* MVCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCache.swift; sourceTree = "<group>"; };
+		484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUrlCache.swift; sourceTree = "<group>"; };
 		484BAF9E228AA07B00BDC39A /* MVOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationQueue.swift; sourceTree = "<group>"; };
 		484BAFA1228AA14C00BDC39A /* MVOperationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationManager.swift; sourceTree = "<group>"; };
+		48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVNsCache.swift; sourceTree = "<group>"; };
+		48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHttpRequestTests.swift; sourceTree = "<group>"; };
+		48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHttpRequest.swift; sourceTree = "<group>"; };
+		48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUrlCacheTests.swift; sourceTree = "<group>"; };
+		48DC8FF6228CD560000F8994 /* MVOperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVOperationsTests.swift; sourceTree = "<group>"; };
+		48DC8FF8228CE271000F8994 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +101,11 @@
 		484BAF79228A9CE500BDC39A /* MVDataLoader */ = {
 			isa = PBXGroup;
 			children = (
+				48DC8FED228CCB7C000F8994 /* NetworkLayer */,
 				484BAFA0228AA0EC00BDC39A /* Operations */,
 				484BAF98228A9E0D00BDC39A /* Storage */,
 				484BAF97228A9DF400BDC39A /* OperationsManager */,
-				484BAF94228A9DA400BDC39A /* Data */,
+				484BAF94228A9DA400BDC39A /* DataModel */,
 				484BAF91228A9D2F00BDC39A /* Abstracts */,
 				484BAF7A228A9CE500BDC39A /* MVDataLoader.h */,
 				484BAF7B228A9CE500BDC39A /* Info.plist */,
@@ -99,6 +118,9 @@
 			children = (
 				484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */,
 				484BAF87228A9CE500BDC39A /* Info.plist */,
+				48DC8FF0228CCD6D000F8994 /* MVHttpRequestTests.swift */,
+				48DC8FF4228CD426000F8994 /* MVUrlCacheTests.swift */,
+				48DC8FF6228CD560000F8994 /* MVOperationsTests.swift */,
 			);
 			path = MVDataLoaderTests;
 			sourceTree = "<group>";
@@ -107,16 +129,17 @@
 			isa = PBXGroup;
 			children = (
 				484BAF92228A9D5500BDC39A /* MVOperation.swift */,
+				482AF765228B8320003CBE81 /* MVRegularOperation.swift */,
 			);
 			path = Abstracts;
 			sourceTree = "<group>";
 		};
-		484BAF94228A9DA400BDC39A /* Data */ = {
+		484BAF94228A9DA400BDC39A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				484BAF95228A9DB900BDC39A /* MVDataResponse.swift */,
 			);
-			path = Data;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		484BAF97228A9DF400BDC39A /* OperationsManager */ = {
@@ -131,7 +154,8 @@
 		484BAF98228A9E0D00BDC39A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				484BAF9C228A9E7C00BDC39A /* MVCache.swift */,
+				484BAF9C228A9E7C00BDC39A /* MVUrlCache.swift */,
+				48DC8FEB228CB5B9000F8994 /* MVNsCache.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -140,8 +164,19 @@
 			isa = PBXGroup;
 			children = (
 				484BAF99228A9E4500BDC39A /* MVLoadAnyDataOperation.swift */,
+				482AF767228B8377003CBE81 /* MVCreateImageOperation.swift */,
 			);
 			path = Operations;
+			sourceTree = "<group>";
+		};
+		48DC8FED228CCB7C000F8994 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				48DC8FF2228CD3A6000F8994 /* MVHttpRequest.swift */,
+				48DC8FF8228CE271000F8994 /* MockURLSession.swift */,
+				48DC8FFA228CE28C000F8994 /* MockURLSessionDataTask.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +290,15 @@
 			files = (
 				484BAFA2228AA14C00BDC39A /* MVOperationManager.swift in Sources */,
 				484BAF93228A9D5500BDC39A /* MVOperation.swift in Sources */,
+				482AF768228B8377003CBE81 /* MVCreateImageOperation.swift in Sources */,
+				48DC8FF9228CE271000F8994 /* MockURLSession.swift in Sources */,
 				484BAF96228A9DB900BDC39A /* MVDataResponse.swift in Sources */,
+				48DC8FF3228CD3A6000F8994 /* MVHttpRequest.swift in Sources */,
 				484BAF9A228A9E4500BDC39A /* MVLoadAnyDataOperation.swift in Sources */,
-				484BAF9D228A9E7C00BDC39A /* MVCache.swift in Sources */,
+				482AF766228B8320003CBE81 /* MVRegularOperation.swift in Sources */,
+				48DC8FEC228CB5B9000F8994 /* MVNsCache.swift in Sources */,
+				48DC8FFB228CE28C000F8994 /* MockURLSessionDataTask.swift in Sources */,
+				484BAF9D228A9E7C00BDC39A /* MVUrlCache.swift in Sources */,
 				484BAF9F228AA07B00BDC39A /* MVOperationQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DC8FF7228CD560000F8994 /* MVOperationsTests.swift in Sources */,
 				484BAF86228A9CE500BDC39A /* MVDataLoaderTests.swift in Sources */,
+				48DC8FF1228CCD6D000F8994 /* MVHttpRequestTests.swift in Sources */,
+				48DC8FF5228CD426000F8994 /* MVUrlCacheTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

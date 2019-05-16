@@ -9,11 +9,15 @@
 import Foundation
 
 public struct MVDataResponse {
-    var error: String
-    var data: Data
+    public var error: AnyObject?
+    public var data: Data?
+    public var response: AnyObject?
     
-    init(err: String, data: Data) {
+    
+ 
+    init(_ err: AnyObject,_ data: Data,_ response: AnyObject) {
         self.error = err
         self.data = data
+        self.response = response
     }
 }

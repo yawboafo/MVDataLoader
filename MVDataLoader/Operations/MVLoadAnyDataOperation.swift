@@ -8,15 +8,17 @@
 
 import Foundation
 
-import Foundation
+
 
   class MVLoadAnyDataOperation: MVOperation<MVDataResponse> {
     
+    //let session = URLSession()
+
     private let session: URLSession
     private var urlString: String = ""
     private var task: URLSessionTask?
-    var  cache =   MVCache().sharedCache
-    
+    var  cache =   MVUrlCache().sharedCache
+    var httpClient: MVHttpRequest!
     
     
     
@@ -24,14 +26,22 @@ import Foundation
     init(session: URLSession = URLSession.shared, url: String) {
         self.session = session
         self.urlString = url
+        httpClient = MVHttpRequest(session: session)
+
         
     }
     
   
     
+  
+    
     
 
-    override func main() {
+    override public func main() {
+        
+        if isCancelled {
+            return
+        }
         
         guard let imageURL = URL(string: urlString) else {
             cancel()
@@ -41,7 +51,7 @@ import Foundation
         
         // Prepare urlRequest
         var urlRequest = URLRequest(url: imageURL)
-        urlRequest.cachePolicy = .returnCacheDataElseLoad
+         urlRequest.cachePolicy = .returnCacheDataElseLoad
         
         
         
@@ -50,50 +60,75 @@ import Foundation
         if let cachedData = cache.cachedResponse(for: urlRequest) {
             
             // Prepare Data to prevent throwing nil
-            var _data = Data()
+            //var _data = Data()
             
             
             //Dispatch to main thread
             DispatchQueue.main.async {
-                _data = cachedData.data
-                let data = MVDataResponse(err: "No error",data:_data)
-                self.complete(result: data )
+                //_data = cachedData
+                let data = MVDataResponse("" as AnyObject, cachedData.data ,"" as AnyObject )
+                
+                self.complete(result: data)
+                //if data found cancel Operation
+                self.cancel()
+                print("FROM CACHE : \(cachedData.data)")
+                
+                
                 }
             
             //if data found cancel Operation
-            cancel()
+            
+           
+        }else {
+            
+            
+            
+            httpClient.getData(urlRequest: urlRequest) { (data, error, response) in
+                
+                DispatchQueue.main.async {
+                    
+                    
+                    if error != nil && response != nil {
+                        
+                        self.cache.storeCachedResponse(
+                            CachedURLResponse(
+                                response: response ?? URLResponse(),
+                                data: data ?? Data()),
+                            for: urlRequest)
+                        
+                        
+                        //On response prepare MVDataResponse with data and error even if nil
+                        let _data = MVDataResponse(error as AnyObject,data ?? Data(), response as AnyObject)
+                        self.complete(result: _data)
+                        self.cancel()
+                        print("FROM URLSESSION : \(data ?? Data())")
+                    }else{
+                        
+                        let _data = MVDataResponse(error as AnyObject,data ?? Data(), response as AnyObject)
+                        self.complete(result: _data)
+                        self.cancel()
+                    }
+                    
+                    
+                    
+                }
+            }
+            
+
             
         }
         
         
         
-        //else shot a urlsession dast
-        task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
-            DispatchQueue.main.async {
-                
-                //On response prepare MVDataResponse with data and error even if nil
-                let data = MVDataResponse(err: "\(String(describing: error))",data: data ?? Data())
-                
-               
-                //Cache data
-                self.cache.storeCachedResponse(
-                    CachedURLResponse(
-                        response: response ?? URLResponse(),
-                        data: data.data),
-                    for: urlRequest)
-                
-                
-                self.complete(result: data)
-            }
-            
-        })
-        task?.resume()
+     
         
         
         
     }
     
     // MARK: - Cancel
+    
+    
     
     override func cancel() {
         task?.cancel()
