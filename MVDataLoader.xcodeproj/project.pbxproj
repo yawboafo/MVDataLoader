@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4806424F228DF3230063316D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4806424E228DF3230063316D /* Extensions.swift */; };
+		48064251228DF49E0063316D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48064250228DF49E0063316D /* Utility.swift */; };
 		484BAF81228A9CE500BDC39A /* MVDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484BAF77228A9CE500BDC39A /* MVDataLoader.framework */; };
 		484BAF86228A9CE500BDC39A /* MVDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */; };
 		48B6264F228DE3A400B98C11 /* MVHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B62640228DE3A400B98C11 /* MVHttpRequest.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4806424E228DF3230063316D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48064250228DF49E0063316D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		484BAF77228A9CE500BDC39A /* MVDataLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVDataLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		484BAF80228A9CE500BDC39A /* MVDataLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVDataLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484BAF85228A9CE500BDC39A /* MVDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVDataLoaderTests.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				48B6264B228DE3A400B98C11 /* MVOperationQueue.swift */,
 				48B6264C228DE3A400B98C11 /* MVNsCache.swift */,
 				48B6264E228DE3A400B98C11 /* MVOperationManager.swift */,
+				4806424E228DF3230063316D /* Extensions.swift */,
+				48064250228DF49E0063316D /* Utility.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48064251228DF49E0063316D /* Utility.swift in Sources */,
 				48B6265D228DE3A400B98C11 /* MVOperationManager.swift in Sources */,
 				48B62659228DE3A400B98C11 /* MVOperation.swift in Sources */,
 				48B6264F228DE3A400B98C11 /* MVHttpRequest.swift in Sources */,
@@ -256,6 +263,7 @@
 				48B62650228DE3A400B98C11 /* MVDataResponse.swift in Sources */,
 				48B62653228DE3A400B98C11 /* MVCreateImageOperation.swift in Sources */,
 				48B6265B228DE3A400B98C11 /* MVNsCache.swift in Sources */,
+				4806424F228DF3230063316D /* Extensions.swift in Sources */,
 				48B62656228DE3A400B98C11 /* MockURLSession.swift in Sources */,
 				48B6265A228DE3A400B98C11 /* MVOperationQueue.swift in Sources */,
 				48B62657228DE3A400B98C11 /* MockURLSessionDataTask.swift in Sources */,

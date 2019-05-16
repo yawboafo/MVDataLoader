@@ -50,7 +50,7 @@ open class MVOperationManager {
     
 
     
- public func slowOperation(operationID: String){
+    public func slowOperation(operationID: String){
         for ops in queueManager.queue.operations {
             
             if ops.name == operationID {
