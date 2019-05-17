@@ -99,6 +99,6 @@ private let dataLoader = MVOperationManager()
 Data returned from this Operation is   a struct which contains an `error: AnyObject`, `data: Data`,`response: AnyObject`
 
 ```swift
-let data = MVDataResponse(error, data , as urlresponse )
+let data = MVDataResponse(error, data , urlresponse )
 ```
 
