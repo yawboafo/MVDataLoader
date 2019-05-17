@@ -20,7 +20,7 @@ use_frameworks!
 target 'MyApp' do
   # your other pod
   # ...
-  pod 'MVDataLoader', '~> 1.3'
+  pod 'MVDataLoader', '~> 1.4'
 end
 
 ```
